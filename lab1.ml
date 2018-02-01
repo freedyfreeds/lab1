@@ -177,10 +177,8 @@ replace the "[]" with the correct functional call.
 ......................................................................*)
 
 
-let rec square_all (lst : int list) : int list =
-  match lst with
-  | [] -> []
-  | head :: tail ->
+let rec square_all l =
+  List.map(fun x -> x * x);;
 
 
  ;;
